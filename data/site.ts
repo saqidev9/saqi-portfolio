@@ -9,10 +9,10 @@ export const siteConfig = {
   description:
     "Saqi is a full-stack web developer skilled in React.js, Node.js, Express.js and REST APIs, building production-ready websites and web applications for freelance clients.",
   url: "https://saqi.dev",
-  email: "saqig885@gmail.com",
+  email: "hello@saqi.dev",
   social: {
     github: "https://github.com/saqidev9",
-    linkedin: "https://www.linkedin.com/in/saqib-humayun-72a90640a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    linkedin: "https://linkedin.com/in/saqidev9",
   },
   nav: [
     { label: "/about", href: "#about" },
@@ -23,7 +23,7 @@ export const siteConfig = {
     { label: "/contact", href: "#contact" },
   ],
   terminalLines: [
-    { prompt: "who_am_i", response: "saqi — full-stack web developer" },
+    { prompt: "whoami", response: "saqi — full-stack web developer" },
     { prompt: "stack --list", response: "react.js · node.js · express.js · rest-apis" },
     { prompt: "status", response: "available_for_freelance: true" },
   ],

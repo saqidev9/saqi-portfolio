@@ -1,7 +1,9 @@
+import Image from "next/image";
 import { Github, ExternalLink, Clock } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeInWhenVisible } from "@/components/motion/FadeInWhenVisible";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { ProjectGallery } from "@/components/sections/ProjectGallery";
 import { projects } from "@/data/projects";
 
 export function Projects() {
@@ -20,6 +22,19 @@ export function Projects() {
 
         <FadeInWhenVisible delay={0.1} className="mt-14">
           <GlassCard tilt={false}>
+            {flagship.banner && (
+              <div className="relative mb-8 aspect-[16/9] w-full overflow-hidden rounded-xl border border-border-hairline sm:aspect-[21/9]">
+                <Image
+                  src={flagship.banner}
+                  alt={`${flagship.title} banner`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 1152px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            )}
+
             <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
               <div>
                 <p className="eyebrow-code mb-2">flagship project</p>
@@ -94,6 +109,13 @@ export function Projects() {
                 </div>
               </div>
             </div>
+
+            {flagship.screenshots && flagship.screenshots.length > 0 && (
+              <div className="mt-8">
+                <p className="eyebrow-code mb-3">product screenshots</p>
+                <ProjectGallery images={flagship.screenshots} />
+              </div>
+            )}
           </GlassCard>
         </FadeInWhenVisible>
 

@@ -11,6 +11,29 @@ export const projects = [
     impact:
       "Replaced manual report tracking with a structured digital workflow supporting multi-role access control.",
     tech: ["React.js", "Node.js", "Express.js", "REST APIs", "JWT Auth"],
+    banner: "/projects/student-reporting-system/banner.png",
+    screenshots: [
+      {
+        src: "/projects/student-reporting-system/dashboard-overview.png",
+        alt: "Admin dashboard overview with student stats and charts",
+        caption: "Admin dashboard — overview & analytics",
+      },
+      {
+        src: "/projects/student-reporting-system/add-student.png",
+        alt: "Add new student form",
+        caption: "Add student form",
+      },
+      {
+        src: "/projects/student-reporting-system/students-list.png",
+        alt: "Students list with search and filters",
+        caption: "Students list — search & filters",
+      },
+      {
+        src: "/projects/student-reporting-system/reports-attendance.png",
+        alt: "Reports and attendance view",
+        caption: "Reports & attendance",
+      },
+    ],
     links: { code: null as string | null, demo: null as string | null },
   },
   {

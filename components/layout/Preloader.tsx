@@ -3,7 +3,7 @@
 import { useLayoutEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
-const NAME = "SAQI";
+const NAME = "Saqi";
 const STORAGE_KEY = "saqi-portfolio-visited";
 const DISPLAY_DURATION = 1900; // ms the preloader stays up before exiting
 
